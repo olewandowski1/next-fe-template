@@ -31,6 +31,7 @@ const eslintConfig = [
             'src/lib/**/*',
             'src/server/**/*',
             'src/i18n/**/*',
+            'src/services/**/*',
           ],
         },
         {
