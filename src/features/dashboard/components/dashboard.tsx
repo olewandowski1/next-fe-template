@@ -1,8 +1,8 @@
-import { BrowsersChat } from '@/features/dashboard/browsers-chart';
-import { MainChart } from '@/features/dashboard/main-chart';
-import { RadarVisitorsChart } from '@/features/dashboard/radar-visitors-chart';
-import { VisitorsChart } from '@/features/dashboard/visitors-chart';
 import { Typography } from '@/components/ui/typography';
+import { BrowsersChat } from '@/features/dashboard/components/browsers-chart';
+import { MainChart } from '@/features/dashboard/components/main-chart';
+import { RadarVisitorsChart } from '@/features/dashboard/components/radar-visitors-chart';
+import { VisitorsChart } from '@/features/dashboard/components/visitors-chart';
 
 export const Dashboard = () => {
   return (

@@ -2,7 +2,7 @@
   "routes": {
     "home": "Dashboard",
     "settings": "Settings",
-    "users": "Users",
+    "tasks": "Tasks",
     "login": "Login",
     "administration": "Administration",
     "notFound": "Not Found"

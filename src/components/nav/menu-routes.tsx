@@ -14,7 +14,6 @@ import {
   SidebarMenuSubItem,
 } from '@/components/ui/sidebar';
 import { Link, usePathname } from '@/i18n/routing';
-import { cn } from '@/lib/utils';
 import { ChevronRight, Ellipsis } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
@@ -56,11 +55,11 @@ export const MenuRoutes: React.FC<MenuRoutesProps> = ({ menuRoutes }) => {
               <CollapsibleContent>
                 <SidebarMenuSub>
                   {route.items.map((item) => (
-                    <SidebarMenuSubItem
-                      key={item.key}
-                      className={cn({ active: pathname.includes(item.key) })}
-                    >
-                      <SidebarMenuSubButton asChild>
+                    <SidebarMenuSubItem key={item.key}>
+                      <SidebarMenuSubButton
+                        asChild
+                        isActive={pathname.includes(item.href)}
+                      >
                         <Link href={`/${item.href}`}>{t(item.key)}</Link>
                       </SidebarMenuSubButton>
                     </SidebarMenuSubItem>

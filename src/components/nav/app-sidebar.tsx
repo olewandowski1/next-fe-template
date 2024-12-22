@@ -47,8 +47,8 @@ const SAMPLE_DATA = {
       icon: Terminal,
       items: [
         {
-          key: 'users',
-          href: '/users',
+          key: 'tasks',
+          href: '/tasks',
           isActive: true,
         },
         {
