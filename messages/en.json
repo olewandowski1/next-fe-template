@@ -1,4 +1,12 @@
 {
+  "routes": {
+    "home": "Dashboard",
+    "settings": "Settings",
+    "users": "Users",
+    "login": "Login",
+    "administration": "Administration"
+  },
+
   "HomePage": {
     "title": "Home Page",
     "description": "This is the home page"
@@ -8,5 +16,34 @@
     "title": "Oops! We can't find the page you're looking for.",
     "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
     "back": "Home"
+  },
+
+  "UserWidget": {
+    "theme": "Theme",
+    "language": "Language",
+    "preferences": "Preferences",
+    "logout": "Logout",
+    "settings": "Settings",
+    "roles": "Roles"
+  },
+
+  "ModeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+
+  "AppSidebar": {
+    "menu": "Menu"
+  },
+
+  "MainRoutes": {
+    "home": "Home"
+  },
+
+  "DashboardBanner": {
+    "title": "Boost your experience with the latest Next.js template",
+    "description": "Page is under current development. Stay tuned for more updates.",
+    "cta": "Leave a feedback"
   }
 }

@@ -1,4 +1,5 @@
 import '@/app/globals.css';
+import { ThemeProvider } from '@/components/providers/theme-provider';
 import { isValidLocale } from '@/i18n/utils';
 import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
@@ -34,11 +35,18 @@ const RootLayout: React.FC<RootLayoutProps> = async ({ children, params }) => {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body className={`${montserratFont.className} antialiased`}>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            {children}
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
