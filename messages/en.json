@@ -4,7 +4,8 @@
     "settings": "Settings",
     "users": "Users",
     "login": "Login",
-    "administration": "Administration"
+    "administration": "Administration",
+    "notFound": "Not Found"
   },
 
   "HomePage": {

@@ -1,5 +1,5 @@
-import { Dashboard } from '@/components/dashboard/dashboard';
-import { DashboardBanner } from '@/components/dashboard/dashboard-banner';
+import { Dashboard } from '@/features/dashboard/dashboard';
+import { DashboardBanner } from '@/features/dashboard/dashboard-banner';
 
 const DashboardPage = () => {
   return (

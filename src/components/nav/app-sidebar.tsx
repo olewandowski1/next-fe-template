@@ -13,7 +13,7 @@ import {
   SidebarHeader,
   SidebarRail,
 } from '@/components/ui/sidebar';
-import { Boxes, Home, Terminal } from 'lucide-react';
+import { Boxes, Home, LogIn, Terminal } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 const SAMPLE_DATA = {
@@ -34,6 +34,12 @@ const SAMPLE_DATA = {
       icon: Home,
       isActive: true,
     },
+    {
+      key: 'login',
+      href: '/login',
+      icon: LogIn,
+      isActive: true,
+    },
   ],
   menuRoutes: [
     {
@@ -46,8 +52,8 @@ const SAMPLE_DATA = {
           isActive: true,
         },
         {
-          key: 'login',
-          href: '/login',
+          key: 'notFound',
+          href: '/not-found',
           isActive: true,
         },
       ],

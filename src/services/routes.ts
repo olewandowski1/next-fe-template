@@ -8,13 +8,10 @@ export const ROUTES = {
   LOGIN: {
     _SELF: '/login',
   },
-  ADMINISTRATION: {
-    _SELF: '/administration',
-  },
-  SETTINGS: {
-    _SELF: '/settings',
-  },
   USERS: {
     _SELF: '/users',
+  },
+  NOT_FOUND: {
+    _SELF: '/not-found',
   },
 } as const;

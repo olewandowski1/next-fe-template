@@ -1,7 +1,7 @@
-import { BrowsersChat } from '@/components/dashboard/browsers-chart';
-import { MainChart } from '@/components/dashboard/main-chart';
-import { RadarVisitorsChart } from '@/components/dashboard/radar-visitors-chart';
-import { VisitorsChart } from '@/components/dashboard/visitors-chart';
+import { BrowsersChat } from '@/features/dashboard/browsers-chart';
+import { MainChart } from '@/features/dashboard/main-chart';
+import { RadarVisitorsChart } from '@/features/dashboard/radar-visitors-chart';
+import { VisitorsChart } from '@/features/dashboard/visitors-chart';
 import { Typography } from '@/components/ui/typography';
 
 export const Dashboard = () => {

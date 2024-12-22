@@ -2,11 +2,11 @@ import { AppSidebar } from '@/components/nav/app-sidebar';
 import { SidebarProvider, SidebarTrigger } from '@/components/ui/sidebar';
 import { TooltipProvider } from '@/components/ui/tooltip';
 
-type WebLayoutProps = {
+type AppLayoutProps = {
   children: React.ReactNode;
 };
 
-const WebLayout: React.FC<WebLayoutProps> = ({ children }) => {
+const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
   return (
     <TooltipProvider>
       <SidebarProvider>
@@ -22,4 +22,4 @@ const WebLayout: React.FC<WebLayoutProps> = ({ children }) => {
   );
 };
 
-export default WebLayout;
+export default AppLayout;
